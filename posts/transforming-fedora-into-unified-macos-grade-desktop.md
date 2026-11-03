@@ -339,7 +339,7 @@ The difference between amateur theming and an operating system that feels truly 
 
 In GNOME 50, the Quick Settings action bar features circular 40px action buttons: Screenshot, Settings, Lock, and Power. The Battery indicator, however, uses an independent `.power-item` container. Upstream CSS assigned it `margin: 6px 12px; icon-size: 16px;`, causing the battery to render off-center and squished.
 
-![Quick settings panel with not centered battery icon and purple accent sliders](/images/posts/fedora-customization/battery-icon-alignment.png)
+![Quick settings panel with not centered battery icon and purple accent sliders](https://i.imgur.com/FDpSVsP.png)
 
 To solve this, we applied strict geometric math:
 
@@ -371,7 +371,7 @@ We applied this directly in `~/.local/share/themes/Orchis-Purple-Dark/gnome-shel
 
 When using `dash-to-dock` with pill-shaped floating styling, clicking the "Show Applications" grid icon caused square hover highlights to bleed outside the rounded container edges:
 
-![Floating pill dock with glowing active indicators and rounded boundary](/images/posts/fedora-customization/floating-dock-pill.png)
+![Floating pill dock with glowing active indicators and rounded boundary](https://i.imgur.com/lGhdj1B.png)
 
 ```css
 /* Dash to Dock: Contain Show-Apps Highlight within the Curved Pill */
@@ -391,7 +391,7 @@ When using `dash-to-dock` with pill-shaped floating styling, clicking the "Show 
 
 When GNOME Shell opens modal confirmation dialogs (e.g., Log Out, Restart, Root Authentication), Mutter's default `Lightbox` dims the background with an aggressive, opaque black mask (`fadeFactor: 0.8`), which obscures desktop context and feels visually jarring.
 
-![Quick settings power menu with high-contrast text and dark glass blur](/images/posts/fedora-customization/quick-settings-power-menu.png)
+![Quick settings power menu with high-contrast text and dark glass blur](https://i.imgur.com/6Dw1fPa.png)
 
 We patched the Lightbox actor in `rounded-windows` and styled the shell class:
 
